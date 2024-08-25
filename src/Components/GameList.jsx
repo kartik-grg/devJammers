@@ -38,7 +38,7 @@ const games = [
     icon: false,
   },
   {
-    image: "https://via.placeholder.com/300x200",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRko1k7k8Oht-KYxneHBfKWhKlV1YkEyLwhQw&s ",
     title: "Black Myth: Wu Kong",
     platforms: ["playstation", "xbox", "windows"],
     likes: 645,
