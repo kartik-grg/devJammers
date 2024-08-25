@@ -24,7 +24,7 @@ const games = [
     icon: true,
   },
   {
-    image: "https://img.freepik.com/premium-photo/fortnite-wallpaper-4k-gaming-wallpaper_776674-1047509.jpg?size=626&ext=jpg&ga=GA1.1.586226246.1724325580&semt=ais_hybrid",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUT9jC63gfgflMobICfukBYx8tX4J6M4xTpQ&s",
     title: "Little Devil Inside",
     platforms: ["playstation", "steam", "mac"],
     likes: 144,
@@ -45,21 +45,21 @@ const games = [
     icon: true,
   },
   {
-    image: "https://via.placeholder.com/300x200",
+    image: "https://img.utdstc.com/screen/f7c/144/f7c14446fe8bcb33594a96fa5a8109d9cbe6d35308c1fef879dbf051babace45:400",
     title: "The Wolf Among Us 2",
     platforms: ["playstation", "windows", "steam"],
     likes: 321,
     icon: true,
   },
   {
-    image: "https://via.placeholder.com/300x200",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV5cxA6CdWw5XYVwmsjt6lAh_WDhXAv90xwQ&s",
     title: "Dark and Darker",
     platforms: ["windows", "steam"],
     likes: 198,
     icon: false,
   },
   {
-    image: "https://via.placeholder.com/300x200",
+    image: "https://img.freepik.com/premium-photo/fortnite-wallpaper-4k-gaming-wallpaper_776674-1047509.jpg?size=626&ext=jpg&ga=GA1.1.586226246.1724325580&semt=ais_hybrid",
     title: "Path of Exile 2",
     platforms: ["windows", "steam"],
     likes: 276,
