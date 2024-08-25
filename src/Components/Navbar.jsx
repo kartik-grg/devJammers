@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBell, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from "../assets/iogo.png";
 
 const Navbar = () => {
   return (
@@ -9,18 +10,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-6">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="h-6 w-6 text-blue-500"
-          >
-            <path
-              fillRule="evenodd"
-              d="M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5zM10.5 7.5v4.793l4.5 4.5 1.06-1.06-3.56-3.56V7.5h-2z"
-              clipRule="evenodd"
-            />
-          </svg>
+          <img src={logo} alt=""  className="h-12 rounded-[10px]"/>
           <span className="text-lg font-semibold">GameVerse</span>
         </div>
 
@@ -29,9 +19,9 @@ const Navbar = () => {
           <a href="#" className="text-white hover:text-gray-400">
             Home
           </a>
-          <a href="#" className="text-white hover:text-gray-400">
+          <Link to="/Community" className="text-white hover:text-gray-400">
             Community
-          </a>
+          </Link>
         </div>
       </div>
 
