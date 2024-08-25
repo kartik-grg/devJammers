@@ -3,7 +3,7 @@ import { FaBell, FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-900 text-white px-4 py-2.5 shadow-md flex items-center justify-between">
+    <nav className="bg-gray-900 text-white px-4 py-5 shadow-md flex items-center justify-between sticky top-0">
       {/* Left side: Logo and navigation links */}
       <div className="flex items-center space-x-6">
         {/* Logo */}
@@ -20,7 +20,7 @@ const Navbar = () => {
               clipRule="evenodd"
             />
           </svg>
-          <span className="text-lg font-semibold">Dashboard</span>
+          <span className="text-lg font-semibold">GameVerse</span>
         </div>
 
         {/* Navigation Links */}
