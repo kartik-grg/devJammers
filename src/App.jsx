@@ -1,7 +1,7 @@
 import { Route, createBrowserRouter, RouterProvider, createRoutesFromElements } from 'react-router-dom'
 import HomePage from './Pages/HomePage';
 import Login from './Pages/Login';
-
+import CommunityPage from './Pages/CommunityPage';
 const App = () => {
     
     const router = createBrowserRouter(
@@ -9,6 +9,7 @@ const App = () => {
         <>
         <Route index element = {<HomePage />} />
         <Route path='/Login' element = {<Login />} />
+        <Route path='/Community' element = {<CommunityPage />} />
         </>
     )
     );
