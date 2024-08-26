@@ -4,7 +4,7 @@ import { FaPlaystation, FaXbox, FaSteam, FaWindows, FaApple, FaLinux, FaThumbsUp
 const GameCard = ({ image, title, platforms, likes, icon }) => {
   return (
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-md">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
+      <img src={image} alt={title} className="w-full h-48 object-fill" />
       <div className="p-4">
         <div className="flex items-center space-x-2 mb-2">
           {platforms.includes("playstation") && <FaPlaystation className="text-gray-400" />}

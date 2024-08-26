@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBell, FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -46,14 +47,19 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Notifications */}
+        {/* Notifications
         <div className="relative">
           <FaBell className="text-gray-400 hover:text-white cursor-pointer" />
-          {/* Notification badge */}
+          Notification badge
           <span className="absolute top-0 right-0 h-2 w-2 bg-red-500 rounded-full"></span>
-        </div>
+        </div> */}
 
         {/* User profile */}
+        <div className="flex space-x-6">
+          <Link to="/login" className="text-white hover:text-gray-400">
+            Login
+          </Link>
+        </div>
         <div
           className="h-8 w-8 rounded-full border-2 border-gray-800 bg-red-800"
         />

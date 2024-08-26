@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 const categories = [
-  { title: 'FIGHTING', image: 'url(/path-to-fighting-image.jpg)' },
-  { title: 'ROLE-PLAYING', image: 'url(/path-to-role-playing-image.jpg)' },
-  { title: 'SIMULATION', image: 'url(/path-to-simulation-image.jpg)' },
-  { title: 'ALL SPORTS', image: 'url(/path-to-sports-image.jpg)' },
-  { title: 'ADVENTURE', image: 'url(/path-to-adventure-image.jpg)' },
-  { title: 'STRATEGY', image: 'url(/path-to-strategy-image.jpg)' },
-  { title: 'PUZZLE', image: 'url(/path-to-puzzle-image.jpg)' },
-  { title: 'SHOOTER', image: 'url(/path-to-shooter-image.jpg)' },
+  { title: 'FIGHTING'},
+  { title: 'ROLE-PLAYING'},
+  { title: 'SIMULATION'},
+  { title: 'ALL SPORTS'},
+  { title: 'ADVENTURE'},
+  { title: 'STRATEGY'},
+  { title: 'PUZZLE'},
+  { title: 'SHOOTER'},
   // Add more categories as needed
 ];
 
@@ -59,13 +59,13 @@ const CategorySlider = () => {
             <div
               key={index}
               className="w-64 h-36 rounded-lg flex items-end justify-center text-white font-semibold text-lg"
-              style={{
-                backgroundImage: `url(${category.image})`,
-                backgroundSize: 'cover',    
-                backgroundPosition: 'center',
-              }}
+              // style={{
+              //   backgroundImage: {category.image},
+              //   backgroundSize: 'cover',    
+              //   backgroundPosition: 'center',
+              // }}
             >
-              <div className="bg-gray-600 bg-opacity-50 w-full p-2 text-center">
+              <div className="bg-gray-600 bg-opacity-50 w-full h-40 p-2 text-center flex flex-col justify-center align-center ">
                 {category.title}
               </div>
             </div>
