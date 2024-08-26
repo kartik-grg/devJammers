@@ -73,9 +73,11 @@ const Navbar = () => {
           )}
         </div>
         {user && (
+          <Link to="/userdashboard">
           <div
             className="h-8 w-8 rounded-full border-2 border-gray-800 bg-red-800"
           />
+          </Link>
         )}
       </div>
     </nav>
