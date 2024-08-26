@@ -4,13 +4,13 @@ const featuredContent = [
   {
     id: 1,
     title: 'New Update: Patch 2.0 Overview',
-    imageUrl: 'https://via.placeholder.com/300',
+    imageUrl: 'https://i.ytimg.com/vi/G89k6Zy1rT4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBZyleOwybRWukt_mqX7JAVJf3WuA',
     description: 'Discover all the new features in the latest update.',
   },
   {
     id: 2,
     title: 'Character Spotlight: The Mighty Hero',
-    imageUrl: 'https://via.placeholder.com/300',
+    imageUrl: 'https://gam3s.gg/_next/image/?url=https%3A%2F%2Fassets.polkastarter.gg%2FCosmik_Battle_game_image_1_3de611ffdd%2FCosmik_Battle_game_image_1_3de611ffdd.png&w=3840&q=75',
     description: 'Learn how to maximize your gameplay with this powerful character.',
   },
 ];
@@ -57,7 +57,7 @@ function CommunityPage() {
               <img
                 src={content.imageUrl}
                 alt={content.title}
-                className="w-full h-48 object-cover rounded-md mb-4"
+                className="w-full h-48 object-fill rounded-md mb-4"
               />
               <h3 className="text-xl font-bold">{content.title}</h3>
               <p className="text-gray-400 mt-2">{content.description}</p>
@@ -112,27 +112,27 @@ function CommunityPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-gray-800 p-6 rounded-lg">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-4FR7T52IkN57IA-eVdj_nQ2uRLRzOwme_Q&s"
               alt="User Post"
-              className="w-full h-48 object-cover rounded-md mb-4"
+              className="w-full h-48 object-fill rounded-md mb-4"
             />
             <h3 className="text-xl font-bold">User123's Amazing Screenshot</h3>
             <p className="text-gray-400 mt-2">Check out this awesome in-game shot!</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwpRtqmywIL7m7OKyd5kxjkrVKKnWOVmgk8w&s"
               alt="User Post"
-              className="w-full h-48 object-cover rounded-md mb-4"
+              className="w-full h-48 object-fill rounded-md mb-4"
             />
             <h3 className="text-xl font-bold">GamerX's Latest Video</h3>
             <p className="text-gray-400 mt-2">Watch this epic gameplay video.</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqO9PT2XlxlfC4jT-_vIjv64wAD3W6qs-eDg&s"
               alt="User Post"
-              className="w-full h-48 object-cover rounded-md mb-4"
+              className="w-full h-48 object-fill rounded-md mb-4"
             />
             <h3 className="text-xl font-bold">Epic Moments Compilation</h3>
             <p className="text-gray-400 mt-2">A collection of the best in-game moments.</p>
