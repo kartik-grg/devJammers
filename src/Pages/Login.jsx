@@ -2,13 +2,13 @@
   import { auth } from "../Config/firebase";
   import { signInWithEmailAndPassword } from "firebase/auth";
   import { useNavigate } from 'react-router-dom';
+  import { Link } from 'react-router-dom';
 
   const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
-    console.log(auth?.currentUser?.email);
     const navigate = useNavigate();
 
     const goHome = () =>{
@@ -22,8 +22,10 @@
     
 
       try {
-        await signInWithEmailAndPassword(auth, email, password);
-        navigate("/"); // Navigate only on successful sign-in
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+      console.log("Logged in user email:", user.email);
+      navigate("/"); 
       } catch (err) {
         setError(err.message);
         console.error(err);
@@ -69,7 +71,7 @@
             </div>
           </form>
           <p className="mt-4 text-center text-sm text-gray-400">
-          Don't have an account? <a href="#" className="text-blue-400 hover:underline">Sign up</a>
+          Don't have an account? <Link to="/Register" className="text-blue-400 hover:underline">Register</Link>
           </p>
         </div>
       </div>
