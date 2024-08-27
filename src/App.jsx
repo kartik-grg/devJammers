@@ -3,6 +3,8 @@ import HomePage from './Pages/HomePage';
 import Login from './Pages/Login';
 import CommunityForum from './Pages/CommunityForum';
 import Register from './Pages/Register';
+import Error404 from './Components/Error404';
+import BlackPantherPage from './Pages/BlackPantherPage';
 const App = () => {
     
     const router = createBrowserRouter(
@@ -12,6 +14,8 @@ const App = () => {
         <Route path='/Login' element = {<Login />} />
         <Route path='/Register' element = {<Register />} />
         <Route path='/Community' element = {<CommunityForum />} />
+        <Route path='/BlackPanther' element = {<BlackPantherPage />} />
+        <Route path='*' element = {<Error404 />} />
         </>
     )
     );
